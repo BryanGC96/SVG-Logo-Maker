@@ -1,10 +1,45 @@
 // Generates a circle:
-const circleShape = (`<circle cx="150" cy="100" r="80" `);
-
-// Generates a square:
-const squareShape = (`<rect x="85" y="40" width="130" height="130" `);
+class Circle {
+    constructor(cx, cy, r) {
+        this.cx = cx;
+        this.cy = cy;
+        this.r = r;
+    }
+    setColor(color) {
+        this.color = color;
+    }
+    render() {
+        return `<circle cx="${this.cx}" cy="${this.cy}" r="${this.r}" fill="${this.color}" />`
+    }
+};
 
 // Generates a triangle:
-const triangleShape = (`<polyline points="150 10, 1 300, 500 700, 150 10" `);
+class Triangle {
+    constructor(points) {
+        this.points = points;
+    }
+    setColor(color) {
+        this.color = color;
+    }
+    render() {
+        return `<polygon points="${this.points}" fill="${this.color}" />`
+    }
+};
 
-module.exports = { circleShape, squareShape, triangleShape };
+// Generates a square:
+class Square {
+    constructor(x, y, width, height) {
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+    }
+    setColor(color) {
+        this.color = color;
+    }
+    render() {
+        return `<rect x="${this.x}" y="${this.y}" width="${this.width}" height="${this.height}" fill="${this.color}" />`
+    }
+};
+
+module.exports = { Circle, Triangle, Square };
