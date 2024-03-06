@@ -21,5 +21,5 @@ Student : Bryan Gomez Cerda
 
 Link to video/test : https://drive.google.com/file/d/1uS55m4ZUpcbmMtdunVI3uVC0b10dl4yn/view?usp=sharing 
 
-Link to Repo :
+Link to Repo : https://github.com/BryanGC96/SVG-Logo-Maker 
 
